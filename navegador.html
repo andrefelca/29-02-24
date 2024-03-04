@@ -25,13 +25,13 @@
     <script type="text/babel">
         
         function Nome(){
-            return <h1>ANDRE</h1>
-        };   
+            return <h1>MATEUS</h1>
+        };
         function Sobrenome(){
-            return <h1>FELIPE</h1>
+            return <h1>HENRIQUE</h1>
         };
         function Endereco() {
-            return <h1>GONSALVES</h1>
+            return <h1>CAETANO</h1>
         };
 
         const Menu = (
@@ -147,13 +147,15 @@
 
         const container = document.getElementById('mydiv');
         const root = ReactDOM.createRoot(container);
-        root.render(
-           Menu
-            );
-            
-           
+        root.render(menu);
+            <React.StrictMode>
+            <Nome/>
+            <Sobrenome/>
+            <Endereco/>
+            </React.StrictMode>
+                      
     </script>
 
 </body>
 
-</html>
+</html> 
